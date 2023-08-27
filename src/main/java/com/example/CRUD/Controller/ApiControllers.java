@@ -15,6 +15,7 @@ public class ApiControllers {
     public String getPage(){
         return "welcome";
     }
+
     @GetMapping(value="/users")
     public List<User> getUsers(){
         return userRepo.findAll();
